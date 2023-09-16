@@ -1,0 +1,47 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFA1F5;
+  transition: 700ms;
+}
+nav ul li a:hover {
+  box-shadow: inset 0 0 10px 0 #BC7AF9;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.banner {
+  background: url("../imagens/banner.jpeg") 27% center no-repeat;
+  min-height: 500px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+.banner .inner-banner {
+  padding: 3rem;
+  background-color: #F8FF95;
+  border-radius: 2.8rem;
+  opacity: 0.8;
+}
+.banner .inner-banner h1 {
+  font-size: 3rem;
+  color: #FFA1F5;
+}
+.banner .inner-banner h2 {
+  font-size: 1.5rem;
+  color: #BC7AF9;
+}/*# sourceMappingURL=style.css.map */
