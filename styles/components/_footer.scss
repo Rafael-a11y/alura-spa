@@ -1,0 +1,36 @@
+@import "../abstract/_variaveis";
+
+@mixin bg-cores($direction,$cores...)
+{
+    background: linear-gradient($direction, $cores);
+}
+    
+
+footer
+    {
+        text-align: center;
+        font-size: $tamanho-do-texto / 2;
+        border-top: 5px solid $cor-primaria;
+        margin-top: 1rem;
+        padding: 1.2rem;
+        @include bg-cores (to right, $cor-primaria, $cor-secundaria, $cor-terciaria, $cor-quartenaria);
+
+        @media screen 
+        {
+            @media (max-width: 728px)
+            {
+
+            }
+            @media (max-width: 428px)
+            {
+                font-size: 20px;
+                margin-top: 0;
+                padding: 0.8rem;
+            }    
+        }
+
+        i 
+        {
+            color: red ;
+        }
+    }

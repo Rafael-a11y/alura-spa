@@ -9,6 +9,19 @@ nav
             {
                 display: inline-block;
                 padding: 1rem;
+
+                @media screen
+                {
+                    @media (max-width:728px)
+                    {
+
+                    }
+
+                    @media (max-width:428px)
+                    {
+                        padding: 0.3rem;
+                    }
+                }
                 a
                 {
                     text-transform: uppercase;
@@ -16,6 +29,20 @@ nav
                     font-weight: bold;
                     color: $cor-primaria;
                     transition: 700ms;
+
+                    @media screen
+                    {
+                        @media (max-width:728px)
+                        {
+
+                        }
+
+                        @media (max-width:428px)
+                        {
+                            font-size: 12px;
+                        }
+                    }
+
                     &:hover
                     {
                         // border-bottom: 2px solid $cor-secundaria;

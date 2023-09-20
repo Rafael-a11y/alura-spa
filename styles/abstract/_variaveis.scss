@@ -2,8 +2,13 @@ $fonte: "Roboto", sans-serif;
 
 $cor-primaria: #FFA1F5;
 $cor-secundaria: #BC7AF9;
-$cor-terciaria: #F8FF95;
-$cor-quartenaria: #A6FF96;
+$cor-terciaria: #fdcf0493;
+$cor-quartenaria: #e90ae9;
 
 //Variáveis de texto
 $tamanho-do-texto: 3rem;
+
+@mixin calcularTamanhoDaFonte($divisor)
+{
+    font-size: calc($tamanho-do-texto / $divisor);
+}

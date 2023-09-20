@@ -1,0 +1,81 @@
+@import "../abstract/variaveis";
+#final
+{ 
+    
+
+    .final__imagem
+    {
+        max-width: 50%;
+        margin: 0 auto;
+        margin-top: 4rem;
+
+        img 
+        {
+            max-width: 100%;
+        }
+    }
+
+    .final__slogan
+    {
+        margin: 80px;
+        text-align: center;
+        display: inline-block;
+
+        @media screen 
+        {
+            @media (max-width: 728px)
+            {
+
+            }
+            @media (max-width: 428px)
+            {
+                margin: 1rem;
+            }    
+        }
+
+        h3 
+        {
+            font-size: $tamanho-do-texto / 1.2;
+            margin-bottom: 1rem;
+
+            @media screen 
+            {
+                @media (max-width: 728px)
+                {
+
+                }
+                @media (max-width: 428px)
+                {
+                    font-size: calc($tamanho-do-texto / 2.4);
+                    margin-bottom: 10px;
+                }    
+            }
+        }
+
+        h4 
+        {
+            font-size: $tamanho-do-texto / 2.4;
+            margin-bottom: 1rem;
+            color: $cor-secundaria;
+
+            @media screen 
+            {
+                @media (max-width: 728px)
+                {
+
+                }
+                @media (max-width: 428px)
+                {
+                    font-size: 1rem;
+                }    
+            }
+        }
+
+        p 
+        {
+            font-size: $tamanho-do-texto / 3.5;
+            margin-bottom: 1rem;
+            color: $cor-quartenaria;
+        }
+    }
+}

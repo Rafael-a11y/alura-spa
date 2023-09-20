@@ -13,6 +13,18 @@
     align-items: center;
     opacity: 0.9;
 
+    @media screen 
+    {
+        @media (max-width: 728px)
+        {
+
+        }
+        @media (max-width: 728px)
+        {
+            min-height: 250px;
+        }
+    }
+
     .inner-banner
     {
         padding: 3rem;
@@ -20,16 +32,53 @@
         border-radius: 2.8rem;
         opacity: 0.8;
 
+        @media screen
+        {
+            @media (max-width: 728px)
+            {
+
+            }
+            @media (max-width: 428px)
+            {
+                padding: 1rem;
+                opacity: 1;
+            }
+        }
+
         h1 
         {
             font-size: $tamanho-do-texto;
             color: $cor-primaria;
+
+            @media screen 
+            {
+                @media (max-width: 728px)
+                {
+                    
+                }
+                @media (max-width: 428px)
+                {
+                    font-size: calc($tamanho-do-texto / 2);
+                }
+            }
         }
 
         h2 
         {
-            font-size: $tamanho-do-texto / 2;
+            font-size: calc($tamanho-do-texto / 2);
             color: $cor-secundaria;
+
+            @media screen 
+            {
+                @media (max-width: 728px)
+                {
+
+                }
+                @media (max-width: 428px)
+                {
+                    font-size: calc($tamanho-do-texto / 3);
+                }
+            }
         }
 
     }
